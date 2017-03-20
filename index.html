@@ -6,7 +6,7 @@
   </head>
   <body>
     <div ng-app="demoApp" ng-controller="mainController">
-      <h1></h1>
+      <h1>{{['Hello', firstName, lastName].join(' ')}}!</h1>
     </div>
 
     <script>
@@ -14,7 +14,7 @@
 
       demoApp.controller("mainController", function($scope) {
         $scope.firstName = "Thomas";
-          $scope.lastName = "Ochman";  
+          $scope.lastName = "Ochman";
       });
     </script>
   </body>
