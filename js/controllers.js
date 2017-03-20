@@ -1,4 +1,4 @@
-demoApp.controller("mainController", function($scope, userService) {
+angular.module("demoApp").controller("mainController", function($scope, userService) {
   $scope.users = userService.users();
   $scope.newUser = {};
   $scope.addUser = function(){

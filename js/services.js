@@ -1,4 +1,4 @@
-demoApp.service('userService', function(){
+angular.module("demoApp").service('userService', function(){
    var collection = [
      {firstName: 'Thomas', lastName: 'Ochman'},
      {firstName: 'Amber', lastName: 'Wilkie'},

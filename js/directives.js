@@ -1,4 +1,4 @@
-demoApp.directive("sayHello", function() {
+angular.module("demoApp").directive("sayHello", function() {
   return {
     scope: false,
     link: function($scope, element, attrs){
