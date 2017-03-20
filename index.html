@@ -23,8 +23,21 @@
           link: function($scope, element, attrs){
             $scope.message = attrs.message;
           },
-          template: "<h1> {{[message, firstName, lastName].join(' ')}}!</h1>"
+          template: "<h1>{{[message, firstName, lastName].join(' ')}}!</h1>"
         };
+      });
+
+      demoApp.service('userService', function() {
+        var collection = [
+          {firstName: 'Thomas', lastName: 'Ochman'},
+          {firstName: 'Amber', lastName: 'Wilkie'},
+          {firstName: 'Raoul', lastName: 'Diffouo'}
+        ];
+        return {
+          users: function() {
+            return collection;
+          }
+        }
       });
     </script>
   </body>
