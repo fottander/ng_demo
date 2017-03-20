@@ -19,8 +19,8 @@
 
       demoApp.controller("mainController", function($scope, userService) {
         $scope.users = userService.users();
-        $scope.newUser {};
-        $scope.addUser function(){
+        $scope.newUser = {};
+        $scope.addUser = function(){
           userService.add($scope.newUser);
           $scope.newUser = {};
         }
@@ -45,6 +45,9 @@
          return {
            users: function(){
              return collection;
+           },
+           add: function(object) {
+             collection.push(object);
            }
          }
       });
