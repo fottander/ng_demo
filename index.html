@@ -16,6 +16,12 @@
         $scope.firstName = "Thomas";
           $scope.lastName = "Ochman";
       });
+
+      demoApp.directive("sayHello", function() {
+       return {
+           template : "<h1>{{['Hello', firstName, lastName].join(' ')}}!</h1>"
+       };
+     });
     </script>
   </body>
 </html>
