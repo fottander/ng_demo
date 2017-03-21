@@ -9,6 +9,7 @@
       $scope.newUser = {}
       $scope.addUser = function(){
         userService.add($scope.newUser);
+        $scope.newUser = {};
       }
     }
 })();
